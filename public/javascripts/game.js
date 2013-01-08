@@ -61,6 +61,9 @@ var game = function () {
                             //this.stop().animate("walk_right", 10, -1);
                         });
                     }
+                    if(key.key === 32) {
+                        this.stop().animate('shoot', 10, -1 );
+                    }
                 });
                 return this; 
             }
