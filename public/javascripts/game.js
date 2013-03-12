@@ -1,5 +1,5 @@
 var game = function () {
-
+    
     var GAME_TYPE = 'Canvas';
     Crafty.init(600,600);
     Crafty.canvas.init();
@@ -81,7 +81,7 @@ var game = function () {
         Crafty.c('Directions', {
             init: function () {
 
-            },
+            }
         });
 
         var platform = Crafty.e("2D, Canvas, Color, platform, Collision, WiredHitBox")
@@ -121,7 +121,3 @@ var game = function () {
 
     Crafty.scene('loading');
 };
-document.addEventListener("DOMContentLoaded", function() {
-    console.log('the dom is ready');
-    game(); 
-});

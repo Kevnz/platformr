@@ -1,0 +1,1 @@
+This is a simple platformer style game app. Just using it to play around.

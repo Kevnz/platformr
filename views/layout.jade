@@ -3,7 +3,22 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='http://yui.yahooapis.com/3.8.0/build/cssreset/cssreset-min.css')
+    link(rel='stylesheet', href='http://yui.yahooapis.com/3.8.0/build/cssfonts/cssfonts-min.css')
+    link(rel='stylesheet', href='http://yui.yahooapis.com/3.8.0/build/cssbase/cssbase-min.css')
+    script(src='http://yui.yahooapis.com/3.8.0/build/yui/yui-min.js')
     script(src='/javascripts/crafty.js')
     script(src='/javascripts/game.js')
-  body
-    block content
+    body.yui3-skin-pformr
+        #mainnav.yui3-menu.yui3-menu-horizontal
+            .yui3-menu-content
+                ul
+                    li.yui3-menuitem(role='presentation')
+                        a.yui3-menuitem-content(href='#', role='menuitem', tabindex='0') Home
+                    li.yui3-menuitem(role='presentation')
+                        a.yui3-menuitem-content(href='#', role='menuitem', tabindex='0') Help
+                    li.yui3-menuitem(role='presentation')
+                        a.yui3-menuitem-content(href='#', role='menuitem', tabindex='0') High Scores
+                    li.yui3-menuitem(role='presentation')
+                        a.yui3-menuitem-content(href='#', role='menuitem', tabindex='0') Options
+        block content

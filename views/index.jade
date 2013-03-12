@@ -3,3 +3,10 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  script
+    YUI().use('node-base', 'event-base', 'node-menunav', function (Y) {
+        Y.on('domready', game);
+        Y.on('domready', function() {
+            Y.one('#mainnav').plug(Y.Plugin.NodeMenuNav);
+        });
+    });
