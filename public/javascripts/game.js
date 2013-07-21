@@ -6,7 +6,8 @@ var game = function () {
 
     Crafty.sprite(64, '/images/char_full.png', {
         player: [0,8],
-        walking: [0,4]
+        walking: [0,4],
+        shooting: [4,8]
     });
 
 
@@ -32,6 +33,7 @@ var game = function () {
                 .animate("walk_right", 0, 4, 7)
                 .animate("walk_left", 8, 4, 15)
                 .animate('jump_up', 2, 5, 7)
+                .animate('shoot_right', 4, 8, 7)
                 .animate('stance', 0, 7, 0)
                 .gravity('platform')
                 .bind("NewDirection", function (direction) {
@@ -56,9 +58,10 @@ var game = function () {
                     console.log(key);
                     if(key.keyIdentifier === 'Up') {
                         this.stop().animate('jump_up', 8, 0).bind('AnimationEnd', function (det) {
-                            //console.log('jump_up end');
+                            console.log('jump_up end');
                             //console.log(det);
                             //this.stop().animate("walk_right", 10, -1);
+
                         });
                     }
                     if(key.key === 32) {
