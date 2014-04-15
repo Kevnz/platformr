@@ -5,7 +5,13 @@
   "scripts": {
     "start": "node app"
   },
+<<<<<<< HEAD
     "dependencies": {
       "static-cling": "~0.1.6"
+=======
+  "dependencies": {
+    "express": "3.0.5",
+    "jade": "0.35.0"
+>>>>>>> e34820c5cb614af9b379cf31c4c28d3d69b63344
   }
 }
