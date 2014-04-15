@@ -4,16 +4,16 @@ var game = function () {
     Crafty.init(600,600);
     Crafty.canvas.init();
 
-    Crafty.sprite(64, '/images/char_full.png', {
-        player: [0,8],
-        walking: [0,4],
+    Crafty.sprite(32, '/images/player.png', {
+        player: [2,0],
+        walking: [0,3],
         shooting: [4,8]
     });
 
 
     Crafty.scene('loading', function() {
         //load takes an array of assets and a callback when complete
-        Crafty.load(['/images/char_full.png'], function () {
+        Crafty.load(['/images/player.png'], function () {
             Crafty.scene("main"); //when everything is loaded, run the main scene
         });
 

@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Space Fight</title>
+    <link rel="stylesheet" href="http://rawgithub.com/Kevnz/space-fight/master/public/css/base.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.8.0/build/cssreset/cssreset-min.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.8.0/build/cssfonts/cssfonts-min.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.8.0/build/cssbase/cssbase-min.css">
+    <script src="http://yui.yahooapis.com/3.8.0/build/yui/yui-min.js"></script>
+    <script src="/javascripts/crafty.js"></script>
+  </head>
+  <body class="yui3-skin-sam">
+    <div id="mainnav" class="yui3-menu yui3-menu-horizontal">
+      <div class="yui3-menu-content">
+        <ul>
+          <li role="presentation" class="yui3-menuitem"><a href="http://kevnz.github.com/space-fight/" role="menuitem" tabindex="0" class="yui3-menuitem-content">Home</a><a href="http://kevnz.github.com/space-fight/game.html" role="menuitem" tabindex="0" class="yui3-menuitem-content">Play</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="intro">
+      <p>Welcome to Space Fight</p>
+    </div>
+    <script src="/javascripts/game.js"></script> 
+    <script>
+      YUI().use('node-base', 'event-base', 'node-menunav', function (Y) {
+          Y.on('domready', gameInit);
+      });
+    </script>
+    <script type="text/javascript">
+ 
+    </script>
+  </body>
+</html>
